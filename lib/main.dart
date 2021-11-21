@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,10 +13,12 @@ class MyApp extends StatelessWidget {
       title: 'EmpowerUS',
       home: Scaffold(
         appBar: AppBar(
-            title: const Text('hello'),
-            backgroundColor: Colors.blue,
-            elevation: 0,
-            leading: const Icon(Icons.arrow_back)),
+          backgroundColor: Colors.white,
+          elevation: 0,
+          leading: const BackButton(
+            color: Colors.black,
+          ),
+        ),
         body: Container(
           margin: const EdgeInsets.all(10),
           padding: const EdgeInsets.all(10),
@@ -28,7 +28,13 @@ class MyApp extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Text('Hello'),
+                Text(
+                  'Hello',
+                  style: TextStyle(
+                      color: Colors.grey[850],
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20),
+                ),
                 TextFormField(
                   decoration: InputDecoration(
                       focusedBorder: OutlineInputBorder(
@@ -36,10 +42,10 @@ class MyApp extends StatelessWidget {
                           color: Colors.greenAccent,
                           width: 2.0,
                         ),
-                        borderRadius: BorderRadius.circular(50.0),
+                        borderRadius: BorderRadius.circular(10.0),
                       ),
                       enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(50.0),
+                        borderRadius: BorderRadius.circular(10.0),
                         borderSide: const BorderSide(
                           color: Colors.greenAccent,
                           width: 2.0,
@@ -51,14 +57,14 @@ class MyApp extends StatelessWidget {
                 TextFormField(
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50.0),
+                      borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(
                         color: Colors.greenAccent,
                         width: 2.0,
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50.0),
+                      borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(
                         color: Colors.greenAccent,
                         width: 2.0,
@@ -74,14 +80,14 @@ class MyApp extends StatelessWidget {
                       child: TextFormField(
                         decoration: InputDecoration(
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(50.0),
+                            borderRadius: BorderRadius.circular(10.0),
                             borderSide: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(50.0),
+                            borderRadius: BorderRadius.circular(10.0),
                             borderSide: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
@@ -96,14 +102,14 @@ class MyApp extends StatelessWidget {
                       child: TextFormField(
                         decoration: InputDecoration(
                           focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(50.0),
+                            borderRadius: BorderRadius.circular(10.0),
                             borderSide: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
                             ),
                           ),
                           enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(50.0),
+                            borderRadius: BorderRadius.circular(10.0),
                             borderSide: const BorderSide(
                               color: Colors.greenAccent,
                               width: 2.0,
@@ -119,14 +125,14 @@ class MyApp extends StatelessWidget {
                 TextFormField(
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50.0),
+                      borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(
                         color: Colors.greenAccent,
                         width: 2.0,
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(50.0),
+                      borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(
                         color: Colors.greenAccent,
                         width: 2.0,
@@ -144,7 +150,7 @@ class MyApp extends StatelessWidget {
                         MaterialStateProperty.all<Color>(Colors.white),
                   ),
                   onPressed: () {},
-                  child: Text('TextButton'),
+                  child: const Text('TextButton'),
                 )
               ],
             ),
