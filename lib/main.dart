@@ -28,12 +28,15 @@ class MyApp extends StatelessWidget {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  'Hello',
-                  style: TextStyle(
-                      color: Colors.grey[850],
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(5, 0, 0, 2),
+                  child: Text(
+                    'Hello',
+                    style: TextStyle(
+                        color: Colors.grey[850],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
+                  ),
                 ),
                 TextFormField(
                   decoration: InputDecoration(
@@ -54,6 +57,16 @@ class MyApp extends StatelessWidget {
                       hintText: 'TheF'),
                 ),
                 const SizedBox(height: 30),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(5, 0, 0, 2),
+                  child: Text(
+                    'Hello',
+                    style: TextStyle(
+                        color: Colors.grey[850],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
+                  ),
+                ),
                 TextFormField(
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
