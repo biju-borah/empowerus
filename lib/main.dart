@@ -14,6 +14,12 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         resizeToAvoidBottomInset: false,
         appBar: AppBar(
+          title: const Text(
+            'Add card',
+            style: TextStyle(
+              color: Colors.black,
+            ),
+          ),
           backgroundColor: Colors.white,
           elevation: 0,
           leading: const BackButton(
@@ -57,7 +63,7 @@ class MyApp extends StatelessWidget {
                       ),
                       hintText: 'TheF'),
                 ),
-                const SizedBox(height: 30),
+                const SizedBox(height: 20),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(5, 0, 0, 2),
                   child: Text(
@@ -87,7 +93,7 @@ class MyApp extends StatelessWidget {
                     hintText: 'TheF2',
                   ),
                 ),
-                const SizedBox(height: 30),
+                const SizedBox(height: 20),
                 Row(
                   children: [
                     Expanded(
@@ -126,7 +132,7 @@ class MyApp extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const SizedBox(width: 50),
+                    const SizedBox(width: 20),
                     Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -165,7 +171,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-                const SizedBox(height: 30),
+                const SizedBox(height: 20),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(5, 0, 0, 2),
                   child: Text(
