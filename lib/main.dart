@@ -50,6 +50,9 @@ class _HomePageState extends State<HomePage> {
   late String cardno, expirydate, securitycode, cardholder;
   late DateTime date;
   TextEditingController controller = TextEditingController();
+  TextEditingController cardcontroller = TextEditingController();
+  TextEditingController codecontroller = TextEditingController();
+  TextEditingController holdercontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -73,6 +76,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             TextFormField(
+              controller: cardcontroller,
               decoration: InputDecoration(
                 focusedBorder: OutlineInputBorder(
                   borderSide: const BorderSide(
@@ -155,6 +159,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                       TextFormField(
+                        controller: codecontroller,
                         decoration: InputDecoration(
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10.0),
@@ -194,6 +199,7 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             TextFormField(
+              controller: holdercontroller,
               decoration: InputDecoration(
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(10.0),
@@ -229,12 +235,10 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
                 onPressed: () {
-                  // formkey.currentState!.save();
-                  print('cardno is $cardno');
-                  print('expiry date is $expirydate');
-                  print('securitycode is $securitycode');
-                  print('cardholder is $cardholder');
-                  // controller.clear();
+                  print(cardcontroller.text);
+                  print('$expirydate');
+                  print(codecontroller.text);
+                  print(holdercontroller.text);
                 },
               ),
             ),
