@@ -90,51 +90,91 @@ class MyApp extends StatelessWidget {
                 Row(
                   children: [
                     Expanded(
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                            borderSide: const BorderSide(
-                              color: Colors.greenAccent,
-                              width: 2.0,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(5, 0, 0, 2),
+                            child: Text(
+                              'Hello',
+                              style: TextStyle(
+                                  color: Colors.grey[850],
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20),
                             ),
                           ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                            borderSide: const BorderSide(
-                              color: Colors.greenAccent,
-                              width: 2.0,
+                          TextFormField(
+                            decoration: InputDecoration(
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                borderSide: const BorderSide(
+                                  color: Colors.greenAccent,
+                                  width: 2.0,
+                                ),
+                              ),
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                borderSide: const BorderSide(
+                                  color: Colors.greenAccent,
+                                  width: 2.0,
+                                ),
+                              ),
+                              hintText: 'TheF2',
                             ),
                           ),
-                          hintText: 'TheF2',
-                        ),
+                        ],
                       ),
                     ),
                     const SizedBox(width: 50),
                     Expanded(
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          focusedBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                            borderSide: const BorderSide(
-                              color: Colors.greenAccent,
-                              width: 2.0,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(5, 0, 0, 2),
+                            child: Text(
+                              'Hello',
+                              style: TextStyle(
+                                  color: Colors.grey[850],
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20),
                             ),
                           ),
-                          enabledBorder: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10.0),
-                            borderSide: const BorderSide(
-                              color: Colors.greenAccent,
-                              width: 2.0,
+                          TextFormField(
+                            decoration: InputDecoration(
+                              focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                borderSide: const BorderSide(
+                                  color: Colors.greenAccent,
+                                  width: 2.0,
+                                ),
+                              ),
+                              enabledBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                borderSide: const BorderSide(
+                                  color: Colors.greenAccent,
+                                  width: 2.0,
+                                ),
+                              ),
+                              hintText: 'TheF2',
                             ),
                           ),
-                          hintText: 'TheF2',
-                        ),
+                        ],
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(height: 30),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(5, 0, 0, 2),
+                  child: Text(
+                    'Hello',
+                    style: TextStyle(
+                        color: Colors.grey[850],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20),
+                  ),
+                ),
                 TextFormField(
                   decoration: InputDecoration(
                     focusedBorder: OutlineInputBorder(
@@ -163,7 +203,7 @@ class MyApp extends StatelessWidget {
                         MaterialStateProperty.all<Color>(Colors.white),
                   ),
                   onPressed: () {},
-                  child: const Text('TextButton'),
+                  child: const Text('Add Card'),
                 )
               ],
             ),
