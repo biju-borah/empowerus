@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'EmpowerUS',
       home: Scaffold(
+        resizeToAvoidBottomInset: false,
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
@@ -50,7 +51,7 @@ class MyApp extends StatelessWidget {
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10.0),
                         borderSide: const BorderSide(
-                          color: Colors.greenAccent,
+                          color: Colors.grey,
                           width: 2.0,
                         ),
                       ),
@@ -79,7 +80,7 @@ class MyApp extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(
-                        color: Colors.greenAccent,
+                        color: Colors.grey,
                         width: 2.0,
                       ),
                     ),
@@ -115,7 +116,7 @@ class MyApp extends StatelessWidget {
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10.0),
                                 borderSide: const BorderSide(
-                                  color: Colors.greenAccent,
+                                  color: Colors.grey,
                                   width: 2.0,
                                 ),
                               ),
@@ -152,7 +153,7 @@ class MyApp extends StatelessWidget {
                               enabledBorder: OutlineInputBorder(
                                 borderRadius: BorderRadius.circular(10.0),
                                 borderSide: const BorderSide(
-                                  color: Colors.greenAccent,
+                                  color: Colors.grey,
                                   width: 2.0,
                                 ),
                               ),
@@ -187,7 +188,7 @@ class MyApp extends StatelessWidget {
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10.0),
                       borderSide: const BorderSide(
-                        color: Colors.greenAccent,
+                        color: Colors.grey,
                         width: 2.0,
                       ),
                     ),
@@ -203,7 +204,13 @@ class MyApp extends StatelessWidget {
                         MaterialStateProperty.all<Color>(Colors.white),
                   ),
                   onPressed: () {},
-                  child: const Text('Add Card'),
+                  child: const Text(
+                    'Add Card',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                  ),
                 )
               ],
             ),
